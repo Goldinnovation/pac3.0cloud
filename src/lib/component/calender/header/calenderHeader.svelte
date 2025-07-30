@@ -42,15 +42,17 @@
 
 </script>
 
-<div class="w-full h-[7%] flex items-center justify-between">
+<div class="   w-full h-[7%] flex items-center justify-between">
     <!-- Left Header Side Section - Logo, Text -->
-    <div class="w-[20%] h-[100%] flex gap-[1%] pl-1.5" >
-     <div class="w-[10%] h-[100%] flex items-center">
-            <img src="logo.png" alt="scnalyticsLogo" class="w-[100%] h-[60%]">
+    <div class="w-[45%] h-[100%] flex gap-[1%]" >
+     <div class="w-[70%] h-[100%] flex items-center">
+            <input type="text" class=" bg-gray-100 w-[90%] h-[60%] rounded-[7px] border ">
+            <!-- <img src="logo.png" alt="scnalyticsLogo" class="w-[100%] h-[60%]"> -->
+
      </div>
-     <div class="w-[90%] h-[100%] flex items-center">
-            <h1 class="text-4xl font-semibold font-['Helvetica']">Scanlytics</h1>
-     </div>
+     <!-- <div class="w-[90%] h-[100%] flex items-center"> -->
+            <!-- <h1 class="text-4xl font-semibold font-['Helvetica']">Scanlytics</h1> -->
+     <!-- </div> -->
     </div>
     <div  class="w-[50%] h-[100%] flex ">
      
