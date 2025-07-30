@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    let AgendaState = $state(false);
+    let AgendaState = $state(true);
     let roomState = $state(false);
     let patientenState = $state(false);
     let einstellungState = $state(false);
@@ -9,7 +9,7 @@
 
     const handleBtnOption = (option: string) => { 
         
-        console.log('option', option);
+        
         switch(option){
             case "Agenda":
                 AgendaState = true; 
@@ -42,53 +42,55 @@
 
 </script>
 
-
-<div class=" w-full h-[4%] flex items-center justify-between">
+<div class="w-full h-[7%] flex items-center justify-between">
     <!-- Left Header Side Section - Logo, Text -->
-    <div class="w-[20%] h-[100%] flex gap-[0.5%]">
-     <div class=" w-[10%] h-[100%] flex justify-center items-center">
-            <img src="logo.png" alt="scnalyticsLogo" class="w-[70%] h-[70%]">
+    <div class="w-[20%] h-[100%] flex gap-[1%] pl-1.5" >
+     <div class="w-[10%] h-[100%] flex items-center">
+            <img src="logo.png" alt="scnalyticsLogo" class="w-[100%] h-[60%]">
      </div>
      <div class="w-[90%] h-[100%] flex items-center">
-            <h1 class="text-3xl font-semibold font-['Helvetica']">Scanlytics</h1>
+            <h1 class="text-4xl font-semibold font-['Helvetica']">Scanlytics</h1>
      </div>
     </div>
     <div  class="w-[50%] h-[100%] flex ">
      
        
           <!-- Right Header Side Section - Button options: Agenda, Räume, Patienten, Finanzen -->
-        <div class="w-[100%] h-full flex items-center justify-between ">
+        <div class="w-[100%] h-full flex items-center justify-end pr-1.5">
            
+
+                <div class="w-[20%] h-[81%]  flex flex-col justify-center items-end pr-2">
+                    <div>
+                        <p class="text-sm">Anton Leitner</p>
+                    </div>
+                    <div>
+                        <p class="text-xs">Chefarzt</p>
+                    </div>
+                  
+                   
+                
+                </div>
                 {#if AgendaState}
                 <div 
                 on:click={() => handleBtnOption("Agenda")}
-                class="bg-blue-900 w-[20%] h-[70%] flex justify-center border-2 border-blue-900 rounded-[50px] cursor-pointer hover:bg-blue-500 hover:bg-blue-900 hover:text-white">
+                class="bg-[#d40000] w-[6%] h-[81%] flex justify-center items-center border-2 border-[#d40000] rounded-[50px] cursor-pointer hover:bg-blue-500 hover:bg-blue-900 hover:text-white">
 
 
-                <div class="w-[15%] h-[100%] flex items-center justify-center">
+                <div class="w-[65%] h-[70%] flex items-center justify-center">
                     <img src="calw.png" alt="calenderIcon" class="w-[70%]  h-[80%]">
                 </div>
-                <div class="w-[45%] h-[100%] flex items-center pl-[1%] 
-                
-                sm:text-sm
-                md:text-md
-                lg:text-xl
-                xl:text-2xl 
-                2xl:text-lg
-                text-white">
-                    <p>Agenda</p>
-                </div>
+            
                 </div>
               
                 {:else}
                 <div 
                 on:click={() => handleBtnOption("Agenda")}
-                class="bg-white w-[20%] h-[70%] flex justify-center border-2 border-blue-900 rounded-[50px] cursor-pointer hover:bg-blue-500 hover:bg-blue-900 hover:text-white">
+                class="bg-white w-[6%] h-[81%] flex justify-center items-center border-2 border-blue-900 rounded-[50px] cursor-pointer hover:bg-blue-500 hover:bg-blue-900 hover:text-white">
                 
-                <div class="w-[15%] h-[100%] flex items-center justify-center">
+                <div class="w-[65%] h-[70%] flex items-center justify-center">
                     <img src="calb.png" alt="calenderIcon" class="w-[70%]  h-[80%]">
                 </div>
-                <div class="w-[45%] h-[100%] flex items-center pl-[1%] 
+                <!-- <div class="w-[45%] h-[100%] flex items-center pl-[1%] 
                
                 sm:text-xs
                 md:text-xs
@@ -99,13 +101,13 @@
                 
                 text-blue-900">
                     <p>Agenda</p>
-                </div>
+                </div> -->
                 </div>
                 {/if}
                
              
                 <!-- Room Option -->
-          
+<!--           
                 {#if roomState}
                 <div 
                 on:click={() => handleBtnOption("Räume")}
@@ -135,7 +137,7 @@
                 {/if}
 
                
-                <!-- Paitent Header -->
+                
                 {#if patientenState}
                 <div 
                 on:click={() => handleBtnOption("Patienten")}
@@ -190,7 +192,8 @@
                     <p>Einstellung</p>
                 </div>
                 </div>
-                {/if}
+                {/if} 
+                -->
         </div>
 
      
