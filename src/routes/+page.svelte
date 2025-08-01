@@ -1,7 +1,7 @@
 <script>
  
-  import CalenderHeader from "$lib/component/calender/header/calenderHeader.svelte";
-  import CalenderContentbody from "$lib/component/calender/body/calenderContentbody.svelte";
+  import CalenderHeader from "$lib/component/agenda/header/calenderHeader.svelte";
+  import CalenderContentbody from "$lib/component/agenda/agendaBody/calAndPatient.svelte";
   import CalenderNavigation from "$lib/component/navigation/calenderNavigation.svelte";
   import NaviagtionOptions from "$lib/component/navigation/naviagtionOptions.svelte";
 
@@ -9,17 +9,17 @@
 
 <main>
 
-  <div class="navigationArea">
+  <!-- <div class="navigationArea">
     <div class="w-full h-full gap flex flex-col gap-[1%] p-1">
       <CalenderNavigation/>
 
       <NaviagtionOptions/>
 
     </div>
-  </div>
+  </div> -->
   
-  <div class="contentArea">
-    <div class="w-full h-full gap flex flex-col gap-[1%] p-1">
+  <div class="p-1 w-full h-full min-h-0 grid grid-cols-1">
+    <div class="w-full h-screen gap-[1%] flex flex-col gap-[1%] p-[1%]">
       <!-- Header -->
       <CalenderHeader/>
       <!-- Calender Body -->

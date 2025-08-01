@@ -42,7 +42,8 @@
 
 </script>
 
-<div class="   w-full h-[7%] flex items-center justify-between">
+<div class="w-full h-[6.6%] flex items-center justify-between">
+    
     <!-- Left Header Side Section - Logo, Text -->
     <div class="w-[45%] h-[100%] flex gap-[1%]" >
      <div class="w-[70%] h-[100%] flex items-center">

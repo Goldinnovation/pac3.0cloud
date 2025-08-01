@@ -12,19 +12,35 @@
   
   body {
     /* 3. Add accessible line-height */
-    line-height: 1.5;
+    /* line-height: 1.5; */
     /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-    overflow: hidden;
-    padding: 10px;
+    /* -webkit-font-smoothing: antialiased;
+    /* overflow: hidden; */ 
+    /* padding: 10px; */
     /* background-color: black;  */
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
+    max-width: none; */
+  }
+
+  html, body, #svelte {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    width: 100vw;
+    height: 100vh;
     max-width: none;
+    overflow: hidden; 
   }
   
+
   /* 5. Improve media defaults */
   img, picture, video, canvas, svg {
     display: block;
@@ -57,3 +73,49 @@
   }
 
 
+  .ec-time-grid .ec-time, .ec-time-grid .ec-line {
+    /* height: 80% !important; override this value */
+    /* background-color: pink; */
+  }
+
+  .ec {
+    --ec-bg-color: #fbfdff;
+    --ec-text-color: #575757e3;
+      	height: 100%; 
+        margin: 0%;
+        padding: 0%;
+  }
+
+  /* .ec-time-grid .ec-line {
+    height: 0px !important;
+  } */
+
+  /* .ec-line-minor {
+    border-top: none !important;
+  } */
+  
+
+   /* .fc .fc-timegrid-slot-minor {
+    border-top: none !important;
+    color: aqua;
+  } */
+  /* .ec-line {
+    border: 1px dashed #ff6600 !important;
+  } */
+
+/*   
+  
+  
+  .ec-line-minor {
+    border-top: none !important;
+  }
+
+  .ec-time, .fc-cell, .ec-line {
+    border-top: none !important;
+    border-bottom: none !important;
+    background-color: antiquewhite;
+  } */
+
+  .ec-event {
+    cursor: pointer;
+  }
